@@ -99,7 +99,7 @@ while True:
     if webcam:
         success, img = cap.read()
     else:
-        img = cv2.imread('jelzolampa2.png')
+        img = cv2.imread('venv/picters_and_videos/jelzolampa2.png')
     classIds, confs, bbox = net.detect(img, confThreshold=thres)
     # print(classIds, bbox)
 
